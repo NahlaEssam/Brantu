@@ -1,0 +1,42 @@
+
+$brantu-border: solid 1px lightgray;
+$brantu-title-size: 22px;
+$brantu-sub-title-size:17px;
+// $brantu-content-size: 15px;
+
+.brantu-app-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+ 
+  .app-header{
+    text-align: center;
+    border-bottom: $brantu-border;
+    color: white;
+    padding: 1px 10px;
+  
+    .title{
+        font-size: $brantu-title-size
+    }
+    .sub-title{
+      font-size: $brantu-sub-title-size;
+      padding: 10px 0px;
+    }
+  }
+
+  .app-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 15px 0px 0px 0px;
+    .search-input{
+        width: 80%;
+        margin: auto;
+    }
+    .products-container{
+      flex: 1;
+      overflow: auto;
+    }
+  }
+}
