@@ -12,13 +12,16 @@ class ProductNameTooltip extends Component {
         return (
     
             <OverlayTrigger
-                overlay={<Tooltip id={id}>{name}</Tooltip>}
+                overlay={<Tooltip className="toolTip" id={id}>{name}</Tooltip>}
                 placement="top"
                 positionTop={0}
                 delayShow={300}
                 delayHide={150}
+                className="overlayTrigger"
             >
-                <span className="tooltip-children">{children}</span>
+             
+                <div className="product-name">{children}</div>
+                
             </OverlayTrigger>
         );
     }

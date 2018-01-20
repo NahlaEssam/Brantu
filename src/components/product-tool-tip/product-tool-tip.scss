@@ -1,6 +1,12 @@
 $brantu-content-size: 15px;
-.tooltip-children{
+
+
+.product-name{
     color: black !important;
     font-size:$brantu-content-size;
     font-weight: bold;
-}
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 0px 3px 0px;
+  }
